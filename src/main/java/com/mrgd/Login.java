@@ -84,7 +84,7 @@ public class Login {
 		return status;
 	}
 	
-	//清空文本框
+		//清空文本框
 		public static void setElementValue(WebElement element,String value){
 			  element.sendKeys(Keys.chord(Keys.CONTROL, "a"), value);//method1
 			 }
