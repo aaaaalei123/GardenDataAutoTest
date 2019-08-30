@@ -20,7 +20,7 @@ public static void main(String[] args) throws Exception {
 			Home.main(args);
 			
 			// 智慧源地
-/*			Monitor.main(args);
+			Monitor.main(args);
 			
 			// 种植分布
 			Plant.main(args);
@@ -33,7 +33,7 @@ public static void main(String[] args) throws Exception {
 			
 			// 溯源数据
 			Origin.main(args);
-			Thread.sleep(1000);*/
+			Thread.sleep(1000);
 			
 			// 清空账号密码框
 		    WebElement ele = webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='name'][type='text']"));
