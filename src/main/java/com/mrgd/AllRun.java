@@ -17,13 +17,13 @@ public static void main(String[] args) throws Exception {
 			Thread.sleep(2000);
 				
 			// 首页
-			Home.main(args);
+//			Home.main(args);
 			
 			// 智慧源地
-/*			Monitor.main(args);
+			Monitor.main(args);
 			
 			// 种植分布
-			Plant.main(args);
+/*			Plant.main(args);
 			
 			// 农事活动
 			Farming.main(args);
