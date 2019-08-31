@@ -20,13 +20,13 @@ public static void main(String[] args) throws Exception {
 //			Home.main(args);
 			
 			// 智慧源地
-			Monitor.main(args);
+//			Monitor.main(args);
 			
 			// 种植分布
-/*			Plant.main(args);
+			Plant.main(args);
 			
 			// 农事活动
-			Farming.main(args);
+/*			Farming.main(args);
 			
 			// 产品仓储
 			Warehouse.main(args);
