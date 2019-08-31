@@ -11,10 +11,10 @@ public class Monitor {
 		Thread.sleep(2000);
 		// 智慧源地
 	    webDriver.findElement(By.xpath("/html/body/div/div[2]/ul/li[2]")).click();
-	    Thread.sleep(1500);
+	    Thread.sleep(2000);
 	    
         // 轮流点击FM监测数据
-/*	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[4]/span")).click();
+	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[4]/span")).click();
 	    Thread.sleep(1000);
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[3]/span")).click();
 	    Thread.sleep(1000);
@@ -53,7 +53,7 @@ public class Monitor {
 	     actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div/div[2]")), 367, 367).perform();
 	     Thread.sleep(1000);
 	     actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div/div[2]")), 432, 367).perform();
-	     Thread.sleep(1000);*/
+	     Thread.sleep(1000);
 	    
 	    // 点击文本框输入果园
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div[2]/div/div/div/div/input")).click();
@@ -119,13 +119,41 @@ public class Monitor {
 	    Thread.sleep(5000);
 	    webDriver.findElement(By.xpath("html/body/div/div[3]/div[3]/div/div[2]/div/div[3]/div[3]/div[1]")).click();
 	    Thread.sleep(2000);
+	   
 	    
-	    // 点击回到第一个果园
-	    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div/div/div[1]/div[3]/div[1]/span"))).perform();
-	    Thread.sleep(3000);
-	    webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div/div/div[1]/div[3]/div[1]/ul/div/div[1]/div/li[1]")).click();
-	    Thread.sleep(3000);
-
+	    // 农事活动悬停点击
+	    for (int i = 0; i < 2; i++) {
+		    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 250, 20).click().perform();
+		    Thread.sleep(1000);
+		    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 290, 20).click().perform();
+		    Thread.sleep(1000);
+		    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 350, 20).click().perform();
+		    Thread.sleep(1000);
+		    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 400, 20).click().perform();
+		    Thread.sleep(1000);
+	    }
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 55, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 100, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 150, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 200, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 250, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 350, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 400, 50).perform();
+		Thread.sleep(700);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]")), 430, 50).perform(); 
+		Thread.sleep(700);
+		
+		//园区种植分布情况鼠标悬停
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[3]/div[2]/div[1]/div/div[1]")), 145, 60).perform();
+		Thread.sleep(1500);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[3]/div[2]/div[1]/div/div[1]")), 95, 41).perform();
+		Thread.sleep(1500);
 	}
 
 }
