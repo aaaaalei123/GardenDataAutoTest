@@ -20,7 +20,7 @@ public static void main(String[] args) throws Exception {
 			Home.main(args);
 			
 			// 智慧源地
-			Monitor.main(args);
+/*			Monitor.main(args);
 			
 			// 种植分布
 			Plant.main(args);
@@ -41,7 +41,7 @@ public static void main(String[] args) throws Exception {
 		    Thread.sleep(1000);
 		    WebElement ele1 = webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='password'][type='password']"));
 		    ele1.clear();
-		    Thread.sleep(1000);
+		    Thread.sleep(1000);*/
 //		}
 		
   }
