@@ -30,9 +30,9 @@ public class Plant {
 	    //点击江西省
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']")), 650, 700).click().perform();
 		Thread.sleep(1000);
-	    
+	    */
 		// 农作物树龄分布
-	    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]")), 100, 33).perform();
+/*	    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]")), 100, 33).perform();
 		Thread.sleep(1000);
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]")), 100, 54).perform();
 		Thread.sleep(1000);
@@ -41,7 +41,7 @@ public class Plant {
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]")), 100, 146).perform();
 		Thread.sleep(1000);
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]")), 100, 160).perform();
-		Thread.sleep(1000);*/
+		Thread.sleep(1000);
 		
 		// 品种面积分布
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[3]/div[2]/div[1]/div/div[1]")), 65, 60).perform();
@@ -57,6 +57,13 @@ public class Plant {
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]")), 100, 64).perform();
 		Thread.sleep(1000);
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]")), 100, 116).perform();
+		Thread.sleep(1000);*/
+		
+		// 产品品质分布
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div/div[1]")), 50, 80).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div/div[1]")), 160, 80).perform();
+		Thread.sleep(1000);
 		
 	}
 
