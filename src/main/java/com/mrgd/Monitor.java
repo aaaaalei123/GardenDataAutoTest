@@ -40,6 +40,8 @@ public class Monitor {
 	    Thread.sleep(1500);
 	    
 	     //设备数据悬停
+	     webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[1]/span")).click();
+	     Thread.sleep(1500);
 	     actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div/div[2]")), 50, 367).perform();
 	     Thread.sleep(1000);
 	     actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div/div[2]")), 102, 367).perform();

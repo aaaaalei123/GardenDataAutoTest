@@ -17,25 +17,25 @@ public static void main(String[] args) throws Exception {
 			Thread.sleep(2000);
 				
 			// 首页
-//			Home.main(args);
+			Home.main(args);
 			
 			// 智慧源地
-//			Monitor.main(args);
+			Monitor.main(args);
 			
 			// 种植分布
-//			Plant.main(args);
+			Plant.main(args);
 			
 			// 农事活动
 			Farming.main(args);
  			
 			// 产品仓储
-//			Warehouse.main(args);
+			Warehouse.main(args);
 			
 			// 溯源数据
-/*			Origin.main(args);
+			Origin.main(args);
 			Thread.sleep(1000);
 			
-			// 清空账号密码框
+/*			// 清空账号密码框
 		    WebElement ele = webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='name'][type='text']"));
 		    ele.clear();
 		    Thread.sleep(1000);
