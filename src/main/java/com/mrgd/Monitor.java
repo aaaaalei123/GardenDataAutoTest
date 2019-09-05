@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Monitor {
-	public static void main(String[] args) throws InterruptedException {
+	public void PageRun() throws Exception{
 		WebDriver webDriver = OpenChrome.webDriver;
 		Actions actions = new Actions(webDriver);         //创建鼠标属性方法
 		Thread.sleep(2000);
@@ -157,5 +157,4 @@ public class Monitor {
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[3]/div[2]/div[1]/div/div[1]")), 95, 41).perform();
 		Thread.sleep(1500);
 	}
-
 }

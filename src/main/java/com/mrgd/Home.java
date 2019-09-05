@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Home {
-	public static void main(String[] args) throws InterruptedException {
+	public void PageRun() throws Exception{
 		WebDriver webdriver = OpenChrome.webDriver;
 		Actions actions = new Actions(webdriver);
 		
@@ -112,7 +112,5 @@ public class Home {
 		// 点击赣州市
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']")), 900, 550).click().perform();
 		Thread.sleep(2000);
-	 
 	}
-
 }

@@ -9,30 +9,37 @@ public static void main(String[] args) throws Exception {
 		// 浏览器
 	    Browser.main(args);
 		WebDriver webDriver = OpenChrome.webDriver;
+		
+		Login login = new Login();
+		Home home = new Home();
+		Monitor monitor = new Monitor();
+		Plant plant = new Plant();
+		Origin origin = new Origin();
+		Farming farming = new Farming();
+		Warehouse warehouse = new Warehouse();
 	
 //		for(int gydp = 0;gydp <= 2; gydp++){
-			
 			// 登录
-			Login.main(args);
+			login.PageRun();
 			Thread.sleep(2000);
 				
 			// 首页
-			Home.main(args);
+			home.PageRun();
 			
 			// 智慧源地
-			Monitor.main(args);
+			monitor.PageRun();
 			
 			// 种植分布
-			Plant.main(args);
+			plant.PageRun();
 			
 			// 农事活动
-			Farming.main(args);
+			farming.PageRun();
  			
 			// 产品仓储
-			Warehouse.main(args);
+			warehouse.PageRun();
 			
 			// 溯源数据
-			Origin.main(args);
+			origin.PageRun();
 			Thread.sleep(1000);
 			
 /*			// 清空账号密码框

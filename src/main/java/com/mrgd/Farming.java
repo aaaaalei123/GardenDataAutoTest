@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Farming {
-	public static void main(String[] args) throws InterruptedException {
+	public void PageRun() throws Exception {
 		WebDriver webDriver = OpenChrome.webDriver;
 		Actions actions = new Actions(webDriver);
 		// 农事活动
@@ -107,5 +107,5 @@ public class Farming {
 		Thread.sleep(700);
 	
 	}
-
+	
 }

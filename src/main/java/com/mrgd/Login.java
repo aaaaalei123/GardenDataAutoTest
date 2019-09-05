@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Login {
-	public static void main(String[] args) throws Exception {
+	
+	public void PageRun() throws Exception{
 		WebDriver webDriver = OpenChrome.webDriver;
 		Login qwer = new Login();
 		
@@ -84,9 +85,9 @@ public class Login {
 		return status;
 	}
 	
-		//清空文本框
-		public static void setElementValue(WebElement element,String value){
-			  element.sendKeys(Keys.chord(Keys.CONTROL, "a"), value);//method1
-			 }
+	//清空文本框
+	public static void setElementValue(WebElement element,String value){
+		  element.sendKeys(Keys.chord(Keys.CONTROL, "a"), value);//method1
+	}
 
 }

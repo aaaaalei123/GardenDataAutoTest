@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Plant {
-	public static void main(String[] args) throws InterruptedException {
+	public void PageRun() throws Exception {
 		WebDriver webDriver = OpenChrome.webDriver;
 		Actions actions = new Actions(webDriver);
 		
@@ -64,7 +64,6 @@ public class Plant {
 		Thread.sleep(1000);
 		actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[3]/div[2]/div[2]/div[1]/div/div[1]")), 160, 80).perform();
 		Thread.sleep(1000);
-		
 	}
 
 }

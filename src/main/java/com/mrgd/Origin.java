@@ -1,16 +1,12 @@
 package com.mrgd;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class Origin {
-	public static void main(String[] args) throws InterruptedException {
+	public void PageRun() throws Exception {
 		WebDriver webDriver = OpenChrome.webDriver;
 		Actions actions=new Actions(webDriver);         //创建鼠标属性方法
 		
@@ -28,7 +24,6 @@ public class Origin {
 		Thread.sleep(500);
 		
 		// 溯源数据
-	   /* 
 	    Thread.sleep(1500);
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div/div/input")).sendKeys("脐橙");;
 	    Thread.sleep(1500);
@@ -41,9 +36,10 @@ public class Origin {
 		
 		  // 刷新页面
 	    webDriver.navigate().refresh();
-	    Thread.sleep(1500);*/
+	    Thread.sleep(1500);
 	    
 	}
-    
+	
+	
 
 }
