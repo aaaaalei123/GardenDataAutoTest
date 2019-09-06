@@ -2,6 +2,7 @@ package com.mrgd;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class Monitor {
@@ -15,7 +16,7 @@ public class Monitor {
 	    Thread.sleep(2000);
 	    
         // 轮流点击FM监测数据
-	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[4]/span")).click();
+	   /* webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[4]/span")).click();
 	    Thread.sleep(1000);
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[3]/span")).click();
 	    Thread.sleep(1000);
@@ -56,7 +57,7 @@ public class Monitor {
 	    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div/div[2]")), 367, 367).perform();
 	    Thread.sleep(1000);
 	    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div/div[2]")), 432, 367).perform();
-	    Thread.sleep(1000);
+	    Thread.sleep(1000);*/
 	    
 	    // 点击文本框输入果园
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div[2]/div/div/div/div/input")).click();
@@ -74,11 +75,26 @@ public class Monitor {
 	    Thread.sleep(2000);
 	    //点击选择果园下拉框
 	    webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div/div/div[1]/div[3]/div[1]/span")).click(); 
-	    Thread.sleep(2000);
+	    Thread.sleep(2000);*/
 
 	    // 全景设备操作
 	    webDriver.findElement(By.cssSelector("div[data-v-1a4295d9][class='zoom iconfont']")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(4000);
+	    // 要拖动的元素
+	    WebElement A = webDriver.findElement(By.xpath("//*[@id='krpano']/div[1]/div[2]"));
+	    //拖动元素移动多少,标准以元素A左上角为准,拖动元素相对元素A移到右边是x是正值，左边是负值，拖动元素相对元素A移到上边是y是负值，下边是正值，
+	    //鼠标拖动A向右移动300,之后释放鼠标
+	    actions.dragAndDropBy(A, 300, 0).perform();
+	    Thread.sleep(2000);
+	    actions.dragAndDropBy(A, 300, 0).perform();
+	    Thread.sleep(2000);
+	    actions.dragAndDropBy(A, 300, 0).perform();
+	    Thread.sleep(2000);
+	    actions.dragAndDropBy(A, 0, 300).perform();
+	    Thread.sleep(2000);
+	    actions.dragAndDropBy(A, 0, -300).perform();
+	    Thread.sleep(2000);
+	    
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div[3]/div/div[2]/div/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]")).click();
 	    Thread.sleep(3000);
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div[3]/div/div[2]/div/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]")).click();
@@ -97,7 +113,7 @@ public class Monitor {
 	    Thread.sleep(3000);  // 最小化
 	    webDriver.findElement(By.xpath("/html/body/div/div[3]/div[3]/div/div[2]/div/div/ul/li[3]")).click();
 	    Thread.sleep(1000);  // 点击枪机
-	    */
+	    
 		// 球机操作
 	    webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div/div/div[1]/div[3]/div[1]/span")).click();
 	    Thread.sleep(1000); 
