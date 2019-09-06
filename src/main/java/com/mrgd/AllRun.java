@@ -14,11 +14,11 @@ public static void main(String[] args) throws Exception {
 		Home home = new Home();
 		Monitor monitor = new Monitor();
 		Plant plant = new Plant();
-		Origin origin = new Origin();
 		Farming farming = new Farming();
 		Warehouse warehouse = new Warehouse();
-	
-		for(int gydp = 0;gydp <= 2; gydp++){
+		Origin origin = new Origin();
+		
+//		for(int gydp = 0;gydp <= 2; gydp++){
 			// 登录
 			login.PageRun();
 			Thread.sleep(2000);
@@ -49,6 +49,6 @@ public static void main(String[] args) throws Exception {
 		    WebElement ele1 = webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='password'][type='password']"));
 		    ele1.clear();
 		    Thread.sleep(1000);
-		}
+//		}
   }
 }

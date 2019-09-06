@@ -114,6 +114,7 @@ public class Warehouse {
 		    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[5]/div[2]/div[1]/div[1]")), 430, 20).perform();
 		    Thread.sleep(700);
 		    actions.moveToElement(webDriver.findElement(By.xpath("//*[@id='app']/div[3]/div[2]/div[5]/div[2]/div[1]/div[1]")), 430, 20).click().perform();
+		    Thread.sleep(700);
 	    }
 	}
 	
