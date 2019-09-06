@@ -18,13 +18,13 @@ public static void main(String[] args) throws Exception {
 		Farming farming = new Farming();
 		Warehouse warehouse = new Warehouse();
 	
-//		for(int gydp = 0;gydp <= 2; gydp++){
+		for(int gydp = 0;gydp <= 2; gydp++){
 			// 登录
 			login.PageRun();
 			Thread.sleep(2000);
 				
 			// 首页
-			home.PageRun();
+			//home.PageRun();
 			
 			// 智慧源地
 			monitor.PageRun();
@@ -42,14 +42,13 @@ public static void main(String[] args) throws Exception {
 			origin.PageRun();
 			Thread.sleep(1000);
 			
-/*			// 清空账号密码框
+			// 清空账号密码框
 		    WebElement ele = webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='name'][type='text']"));
 		    ele.clear();
 		    Thread.sleep(1000);
 		    WebElement ele1 = webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='password'][type='password']"));
 		    ele1.clear();
-		    Thread.sleep(1000);*/
-//		}
-		
+		    Thread.sleep(1000);
+		}
   }
 }

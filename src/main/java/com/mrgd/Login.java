@@ -17,9 +17,9 @@ public class Login {
 		
 		// 登录 
 		Thread.sleep(1000);
+	    webDriver.findElement(By.cssSelector("i[data-v-4eb8dfbc][class='iconfont']")).click();
+		Thread.sleep(1000);
 		webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='name'][type='text']")).sendKeys("admin");
-//		Thread.sleep(1000);
-//	    webDriver.findElement(By.cssSelector("i[data-v-4eb8dfbc][class='iconfont']")).click();
 	    Thread.sleep(1000);
 		webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='password'][type='password']")).sendKeys("admin");
 		Thread.sleep(1000);
