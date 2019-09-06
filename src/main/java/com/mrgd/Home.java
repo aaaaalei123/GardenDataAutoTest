@@ -12,21 +12,21 @@ public class Home {
 		Thread.sleep(1500);
 		//溯源排行悬停
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[1]/div[2]/div[1]/div/div")), 200, 110).perform();
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[1]/div[2]/div[1]/div/div")), 220, 60).perform();
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[1]/div[2]/div[1]/div/div")), 350, 50).perform();
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[1]/div[2]/div[1]/div/div")), 320, 100).perform();
 		
 		//库存比较悬停
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div[2]/div[1]/div/div[1]")), 350, 50).perform();
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div[2]/div[1]/div/div[1]")), 330, 50).perform();
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div[2]/div[1]/div/div[1]")), 310, 60).perform();
-		Thread.sleep(1000);
+		Thread.sleep(700);
 		actions.moveToElement(webdriver.findElement(By.xpath("//*[@id='app']/div[3]/div[1]/div[2]/div[2]/div[1]/div/div[1]")), 290, 70).perform();
 		
 		//施肥用量统计悬停点击

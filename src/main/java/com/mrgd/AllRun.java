@@ -24,7 +24,7 @@ public static void main(String[] args) throws Exception {
 			Thread.sleep(2000);
 				
 			// 首页
-			//home.PageRun();
+			home.PageRun();
 			
 			// 智慧源地
 			monitor.PageRun();
