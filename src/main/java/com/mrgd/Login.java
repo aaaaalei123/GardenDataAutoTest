@@ -17,11 +17,11 @@ public class Login {
 		
 		// 登录 
 		Thread.sleep(1000);
-	    webDriver.findElement(By.cssSelector("i[data-v-4eb8dfbc][class='iconfont']")).click();
+	    webDriver.findElement(By.cssSelector("i[class='iconfont']")).click();
 		Thread.sleep(1000);
-		webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='name'][type='text']")).sendKeys("admin");
+		webDriver.findElement(By.cssSelector("input[id='name'][type='text']")).sendKeys("admin");
 	    Thread.sleep(1000);
-		webDriver.findElement(By.cssSelector("input[data-v-4eb8dfbc][id='password'][type='password']")).sendKeys("admin");
+		webDriver.findElement(By.cssSelector("input[id='password'][type='password']")).sendKeys("admin");
 		Thread.sleep(1000);
 
 		// 获取验证码保存到本地进行验证并提交输入
