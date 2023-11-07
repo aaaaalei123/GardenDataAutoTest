@@ -19,9 +19,9 @@ public class Login {
 		Thread.sleep(1000);
 	    webDriver.findElement(By.cssSelector("i[class='iconfont']")).click();
 		Thread.sleep(1000);
-		webDriver.findElement(By.cssSelector("input[id='name'][type='text']")).sendKeys("admin");
+		webDriver.findElement(By.cssSelector("input[id='name'][type='text']")).sendKeys("");
 	    Thread.sleep(1000);
-		webDriver.findElement(By.cssSelector("input[id='password'][type='password']")).sendKeys("admin");
+		webDriver.findElement(By.cssSelector("input[id='password'][type='password']")).sendKeys("");
 		Thread.sleep(1000);
 
 		// 获取验证码保存到本地进行验证并提交输入
